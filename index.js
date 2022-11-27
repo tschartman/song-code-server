@@ -20,6 +20,10 @@ router.get('koa-example', '/', (ctx) => {
   ctx.body = 'Hello World';
 });
 
+router.get('test', '/test', async (ctx) => {
+    ctx.body = 'OK'
+})
+
 router.get('search', '/spotify-search', async (ctx) => {
 
     const url = 'https://accounts.spotify.com/api/token';
